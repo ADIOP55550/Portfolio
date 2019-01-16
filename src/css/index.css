@@ -1,0 +1,107 @@
+header {
+	text-align: center;
+	width: 100%;
+	height: 30vh;
+	color: white;
+	position: relative;
+}
+
+h1 {
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Thasadith', sans-serif;
+	font-size: 150%;
+	background: url("https://stmed.net/sites/default/files/programming-wallpapers-30748-3756579.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: 100%;
+	color: #1f1f1f;
+	display: block;
+	position: relative;
+}
+
+.top-bar {
+	width: 100%;
+	height: 5vh;
+	text-align: center;
+	color: #9f9f9f;
+	position: fixed;
+	line-height: 5vh;
+	transition: background 500ms ease;
+	z-index: 1;
+}
+
+.dark {
+	background: #1f1f1f;
+}
+
+a {
+	padding: 0px 10px 0px 10px;
+	color: white !important;
+	text-decoration: none;
+}
+
+.item img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.container {
+	margin: 3rem auto;
+	padding: 1rem 0 2.4rem;
+	text-align: center;
+	max-width: 50rem;
+	margin-top: 40vh;
+}
+
+.item {
+	width: 10rem;
+	height: 10rem;
+	position: relative;
+	display: inline-block;
+	margin: 0.4rem;
+}
+
+.item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #2f2f2f;
+	clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);
+	transform: scale(1.077);
+	transition: transform 0.3s;
+}
+
+.item:hover::before {
+	transform: scale(1.154);
+}
+
+.item a {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-size: cover;
+	background-position: center;
+	clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);
+}
